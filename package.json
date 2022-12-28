@@ -1,0 +1,20 @@
+{
+  "name": "Revolt",
+  "version": "0.2.0",
+  "description": "Unofficial Revolt App",
+  "main": "index.js",
+  "icon": "logo.png",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trodi/electron-splashscreen": "^1.0.2",
+    "asar": "^3.1.0",
+    "discord-rpc": "^4.0.1",
+    "electron": "^22.0.0",
+    "powertoast": "^2.1.4"
+  },
+  "scripts": {
+    "start": "npx electron .",
+    "pack": "npx electron-packager . revolt --platform=win32 --arch=x64 --icon=icon.ico --overwrite --asar=true --prune=true --out=release-builds"
+  }
+}
